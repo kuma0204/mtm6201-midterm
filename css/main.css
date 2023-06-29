@@ -1,0 +1,9 @@
+body{
+    background-color:#ffffff ;
+}
+nav ul li {
+    width: 30%;
+    display: inline;
+    margin-right: 30px;
+    border-right: 1px solid #000 ;
+  }
