@@ -21,6 +21,10 @@ nav a{
     color: #480b67;
     font-weight: bold;
 }
+.title {
+    padding: 50px 25px;
+    text-align: center;
+  }
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
@@ -39,7 +43,45 @@ h3{
 p{
     font-size: 18px;
 }
+img{
+    display: block;
+    max-width: 100%;
+      
+}
+textarea{
+	width: 100%;
+}
+table, th, td {
+	border: 1px dotted;
+	padding: 20px 40px;
+}
+.Hours{
+	width: 95%;
+}
+    /* adding color only to two coloums in the table by specifiying it in a class */
+.days{
+	background-color:#69676a;
+}
+.conatiner{
+    background-color:#c8d6c8;
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: #995ab9;
+    padding: 10px 10px;
+    padding: 15px;
 }
   
