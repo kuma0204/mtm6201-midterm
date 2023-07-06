@@ -255,7 +255,16 @@ iframe{
 #logo {
 	float: left;
 }
-
+/* .flex{
+    display: flex;
+    flex-direction: column;
+} */
+.banner{
+    background-color: #995ab9;
+    height: 250px;
+    width: 250px;
+    padding: 10px 10px;
+}
 
 
 
@@ -375,5 +384,12 @@ footer{
 	grid-column: 2/ span 2;
 	grid-row: 1;
     }
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+
+}
+
 }
 
