@@ -182,6 +182,14 @@ h2{
 h3{
     font-size:25px ;
     color: rgb(13, 52, 105);
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 p{
     font-size: 18px;
@@ -198,14 +206,25 @@ img{
 	
 
 }
-#image-1,#image-2,#image-3,#image-4,#image-5,#image-6{
+.menu-images{
     display: block;
-    /* float: left; */
 	width: 70%;
 	max-width: 100%;
 	height: 100%;
-    
+    opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
+    /* float: left; */
+.container:hover .menu-images {
+   opacity: 0.3;
+      
+}
+.container:hover h3 {
+    opacity: 1;
+  }
+    
+
 .search{
     float: right;
   }
@@ -220,9 +239,12 @@ img{
 textarea{
 	width: 100%;
 }
-table, th, td {
+th, td {
 	border: 1px solid;
 	padding: 20px 20px;
+}
+table{
+    border: 1px solid;
 }
 .Hours{
 	width: 95%;
@@ -259,14 +281,16 @@ iframe{
     display: flex;
     flex-direction: column;
 } */
-.banner{
+.banner-6{
     background-color: #995ab9;
     height: 250px;
     width: 250px;
     padding: 10px 10px;
 }
-
-
+.churros{
+    width: 200px;
+    height: 200px;
+}
 
 
 
@@ -352,7 +376,7 @@ footer{
         align-items: stretch;
         justify-items: center;
         }
-#image-1, #image-2,#image-3,#image-4,#image-5,#image-6{
+.menu-images{
         border: 1px solid #e69aea;
         box-shadow: 2px 2px 6px 0px  rgba(176, 123, 176, 0.3);
         max-width: 100%;
@@ -368,12 +392,12 @@ footer{
 .conatiner-2{
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 10px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 	display: grid;
 	width:fit-content;
-	align-items: stretch;
+	align-items:center;
 }
-.form{
+#contact{
     display: grid;
 	grid-column: 1/span 2;
     grid-row: 1;
@@ -383,6 +407,7 @@ footer{
     display: grid;
 	grid-column: 2/ span 2;
 	grid-row: 1;
+    
     }
 .flex{
     display: flex;
@@ -390,6 +415,13 @@ footer{
     flex-direction: row-reverse;
 
 }
+.churros{
+    width: 450px;
+    width: 450px;
+}
+.map{
+    padding-left: 70px;
 
+}
 }
 
