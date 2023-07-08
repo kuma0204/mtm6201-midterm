@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/1db2989dc6.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="wrapper">
     <header class="header">
         <div class="navigation">
             <img src="images/logo.png" alt="logo" id="logo">
@@ -29,7 +30,7 @@
         alt="cake-shop" role="img" aria-details="bakery">
      </div>
 </div>
-<h1 id="heading">  Our menus</h1>
+<h1 id="heading">Our menus</h1>
 <div class="grid">
 
     <!-- menu itemes -->
@@ -39,7 +40,9 @@
                  images/cake-480_x_326.png 600w  "
         sizes="100vw"
         alt="cake-shop" role="img" aria-details="bakery" class="menu-images">
-        <button class="menu-buttons">Button</button>
+        <div class="layer">
+            <div class="text">Cake</div>
+        </div>
 </div>
 
 <div class="container">
@@ -48,45 +51,61 @@
                 images/cakepop-480_x_360.png 600w"
         sizes="100vw"
         alt="cake" class="menu-images" role="img">
-        <button class="menu-buttons">Button</button>
+        <div class="layer">
+            <div class="text">Cakepops</div>
+        </div>
 </div>
 
 <div class="container">
     <img src="images/pie.jpg" 
-        srcset="images/pie-260_x_173.png,
-                images/pie-480_x_320.png"
+        srcset="images/pie-260_x_173.png 480w,
+                images/pie-480_x_320.png 600w"
         sizes="100vw"
         alt="cake" class="menu-images" role="img">
-        <button class="menu-buttons">Button</button>
+        <div class="layer">
+            <div class="text"> Pie</div>
+        </div>
 </div>
 
 <div class="container">
     <img src="images/pastry.jpg" 
-        srcset="images/pastry-260_x_173.png
-                images/pastry-480_x_320.png"
+        srcset="images/pastry-260_x_173.png 480w,
+                images/pastry-480_x_320.png 600w"
          sizes="100vw"
         alt="cake" class="menu-images" role="img">
-        <button class="menu-buttons">Button</button>
+        <div class="layer">
+            <div class="text">Pastry</div>
+        </div>
 </div>
 
 <div class="container">
     <img src="images/partycake.jpg"
-        srcset="images/partycake-260_x_173.png,
-                images/partycake-480_x_320.png" 
+        srcset="images/partycake-260_x_173.png 480w,
+                images/partycake-480_x_320.png 600w" 
         sizes="100vw"          
         alt="cake" class="menu-images" role="img">  
-        <button class="menu-buttons">Button</button>
+        <div class="layer">
+            <div class="text">Customized Cakes</div>
+        </div>
+       
 </div>
+
 <div class="container">
     <img src="images/cookies.png"
-        srcset="images/cookies-260_x_173.png,
-                images/cookies-480_x_320.png"
+        srcset="images/cookies-260_x_173.png 480w,
+                images/cookies-480_x_320.png 600w"
         sizes="100vw"
         alt="cake" class="menu-images" role="img">  
-        <button class="menu-buttons">Button</button>
+        <div class="layer">
+            <div class="text">Cookies</div>
+        </div>
+    </div>
 </div>
+<br>
+<div class="button-con">
 <button  type="button" id="button2" class="button2" >See more <i class="fa-solid fa-play"></i></button>
 </div>
+
 <br>
 <footer role="contentinfo">
     <p>&copy;Butter boutique,2023 
@@ -95,5 +114,7 @@
     <!-- underline tag -->
 </footer>
  </div>
+</div>
+</div>
 </body>
 </html>
