@@ -11,7 +11,7 @@
     <div class="wrapper">
       <main class="header">
         <div class="container">
-            <a href="index.html"> <img src="images/logo.png" alt="logo" id="logo"> </a>
+            <a href="index.html"> <img src="images/logo.png" alt="logo-img" id="logo"> </a>
         </div>
             <div class="nav">
                 <div id="navigation" role="navigation">
@@ -20,12 +20,14 @@
                     <a href="contact.html">CONTACT</a>
                 </div>
                     <br>
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search" role="searchbox">
             </div>
+             <!-- adds skip link -->
                 <a href="#contact" class="skip"> Skip to Contact &darr;</a>
-            <h1> Contact Us</h1>
-                     <p> We value your feedback, inquiries, and suggestions, and we're here to assist you in any way we can. Whether you have a question about our delectable pastries, custom cake orders, or simply want to say hello, we're delighted to hear from you.</p>
+                <h1 role="heading"> Contact Us</h1>
+                     <p role="complementary"> We value your feedback, inquiries, and suggestions, and we're here to assist you in any way we can. Whether you have a question about our delectable pastries, custom cake orders, or simply want to say hello, we're delighted to hear from you.</p>
                      <p> Rest assured that we'll carefully review your submission and reply as soon as possible.</p>
+                     <!-- adds a class to the container with the form and table to create grid -->
          <div class="container-2">
             <div class="form" id="contact">
                      <h2 role="heading">Send us a message</h2>
@@ -55,7 +57,7 @@
             <div class="table">
                 <h2 role="heading">Business Hours</h2>
                 <br>
-            <table class="Hours" role="table" >
+                <table class="Hours" role="table" >
                     <tr class="days">
                         <th>Days</th>
                         <th>Hours</th>
@@ -68,14 +70,15 @@
                         <td>Saturday-Sunday</td>
                         <td>10am-5pm</td>
                     </tr>
-            </table>
+              </table>
             </div>
         </div>
             <br>
             <br>
             <br>
         <footer role="contentinfo" class="footer" >
-            <div class="main-footer" role="grid">
+            <div class="main-footer">
+                <!-- adds copywrite to the footer -->
                 <p>&copy;Butter boutique,2023 
                 <br>
                  All images are taken from <u>pixabay</u></p>
