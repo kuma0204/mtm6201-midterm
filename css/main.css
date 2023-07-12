@@ -1,16 +1,29 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 	background-color: rgb(143, 114, 154);
-    padding: 10px;
+    padding: 5px 5px;
 }
 .wrapper{
     margin: 30px 30px 30px 30px;
     background-color: rgb(207, 197, 211);
+    /* padding: 5px; */
+}
+.nav{
+    position: relative;
+}
+#navigation{
+    position: absolute;
+    top: 2px;
+    right: 16px;
 }
 .nav a{
     text-decoration: none;
+    /* background-color: #e69aea; */
+    border-radius: 9px;
+    align-items: center;
+    max-width: fit-content;
 }
-.nav ul a{
+.nav a{
 	/* display: inline; */
 	display: flex;
 	font-size: 18px;
@@ -29,11 +42,12 @@ body{
     margin-top: 8px;
     /* margin-right: 16px; */
     font-size: 15px;
-    background-color: #c7c1c9;
-    width: 100%;
+    background-color: #dfdbe0;
+    width: 90%;
   }
 .header {
     background-color: rgb(255, 255, 255);
+    padding: 5px;
   }
   
 #logo {
@@ -48,16 +62,17 @@ body{
 
   }
   
-.title {
-    padding: 50px 25px;
-    text-align: center;
-  }
-.h1{
-        /* position: absolute; */
-        top: 50%;
+/* .title {
+    position: absolute;
+    align-self: center;
+    top: 10%;
+  } */
+.title{
+        position: absolute;
+        top: 10%;
         left: 40%;
         bottom: 40%;
-        color: #440954;
+        color: #280132;
 
   }
 .heading{
@@ -72,7 +87,7 @@ body{
 h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    color: black;
+    color: rgb(75, 10, 99);
 }
 /* .menu-buttons{
     font-size:25px ;
@@ -102,8 +117,8 @@ img{
     max-width: 100%;
       
 }
-.banner-3{
-    opacity: 0.7 ;
+.banner3{
+    opacity: 0.7;
     width: 100%;
     max-width: max-content;
 	
@@ -116,6 +131,7 @@ img{
 	height: 100%;
     opacity: 1;
     transition: .5s ease;
+    padding-left: 10px;
     
 }
  .container:hover .menu-images {
@@ -157,11 +173,6 @@ img{
     /* align-items: center; */
     text-align: center;
 }
-
-.search{
-    float: right;
-    width: 90%;
-  }
   
 .skip-button{
     background-color: #f2eef4;
@@ -334,9 +345,10 @@ table{
 .skip {
     text-decoration:none;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #8e98e2;
+    background-color: #e28ea6;
     color: rgb(0, 0, 0);
     padding: 2px 5px;
+    border-radius: 8px;
     
 }
 iframe{
@@ -358,10 +370,11 @@ iframe{
     flex-direction: column;
 } */
 .banner-6{
-    background-color: #995ab9;
+    background-color: #d9c7e2;
     height: 250px;
     width: 250px;
-    padding: 10px 10px;
+    padding: 20px 15px;
+    
 }
 .churros{
     width: 200px;
@@ -373,9 +386,8 @@ iframe{
 label{
     padding-left: 5px;
 }
-
 .footertext{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 footer{
@@ -385,41 +397,37 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-gap: 50px;
-    align-items: stretch;
+    /* align-items: stretch; */
     justify-items: center;
 }
 @media screen and (min-width: 600px) {
-    .topnav li {
-	
-        display: inline;
-        font-size: 20px;
-        padding: 15px;
-      }
-      .topnav li {
-	
-        display: inline;
-        font-size: 20px;
-        padding: 15px;
-      }
-      .nav {
-        overflow: hidden;
-      }
+#navigation a {
+	display: inline;
+    font-size: 20px;
+    padding: 15px;
+    padding-left: 70px;
+    color:#280132;
+    }
+
+.nav {
+    overflow: hidden;
+    }
       
       /* Style the links inside the navigation bar */
-      .nav a {
+.nav a {
         float: left;
         display: block;
-        color: black;
+        color: rgb(0, 0, 0);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
       }
       
-      .nav a:hover {
+.nav a:hover {
         color: black;
       }
-      .nav input[type=text] {
+.nav input[type=text] {
         float: right;
         padding: 10px;
         border: none;
@@ -427,8 +435,13 @@ footer{
         margin-right: 16px;
         font-size: 15px;
         background-color: #c7c1c9;
-        width: 80%;
+        width: fit-content;
       }
+#navigation{
+        position:relative;
+        top: 0;
+        right: 0;
+    }
 .grid { 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -437,14 +450,14 @@ footer{
         justify-items: center;
         }
 .menu-images{
-        border: 1px solid #e69aea;
-        box-shadow: 2px 2px 6px 0px  rgba(176, 123, 176, 0.3);
+        border: 1px solid #b944c6;
+        box-shadow: 2px 2px 6px  rgba(176, 123, 176, 0.3);
         max-width: 100%;
         width: 100%;
+        padding-left: 0;
     
 }
 #button2{
-    /* background-color: rgb(234, 223, 237); */
     background-color: rgb(145, 139, 231);
     padding: 10px 10px 10px 10px;
     font-size: 16px;
@@ -453,8 +466,8 @@ footer{
     right: 50%;;
     
 }
-.conatiner-2{
-	grid-template-columns: repeat(2, 1fr);
+.container-2{
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 10px;
     grid-template-rows: 1fr;
 	display: grid;
@@ -465,13 +478,13 @@ footer{
     display: grid;
 	grid-column: 1/span 2;
     grid-row: 1;
-	width: fit-content;
+	/* width: 70%; */
 }
 .table{
     display: grid;
-	grid-column: 2/ span 2;
+	grid-column: 3/ span 4;
 	grid-row: 1;
-    
+    width: max-content;
     }
 .flex{
     display: flex;
