@@ -11,7 +11,6 @@ body{
 }
 .wrapper{
     margin: 30px 30px 30px 30px;
-    /* background-color: rgb(207, 197, 211); */
 }
 .nav{
     position: relative;
@@ -88,9 +87,9 @@ h1{
     font-size: 45px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* changes the cursor to pointer */
 .container {
     position: relative;
-    /* display:inline-block; */
     cursor: pointer;
   }
 .container:hover .text{
@@ -133,6 +132,7 @@ img{
     font-size: 16px;
     visibility: hidden;
 }
+/* uses hidden to hide the text before the hover so it appears when hovering */
 .layer .text{
     /* margin-bottom: 2rem; */
     background-color: rgb(210, 166, 232);
@@ -149,6 +149,7 @@ img{
 textarea{
 	width: 90%;
 }
+/* styles thw same heading and input */
 th, td {
 	border: 1px solid;
 	padding: 20px 20px;
@@ -163,6 +164,7 @@ table{
 .days{
 	background-color:#d0cbed;
 }
+/* adds animation to the buttons */
 #button1{
     background-color: var(--light-color);
     padding: 10px 10px;
@@ -275,6 +277,7 @@ table{
         background-color: #d550b8;
       }
   }
+  /* adds animation when the button is active */
 .send:active{
     transform: translateY(4px);
     box-shadow: 0 4px #000000;
@@ -304,6 +307,7 @@ table{
     padding: 2px 5px;
     border-radius: 8px;
 }
+/* styles the loction  */
 iframe{
 	border: 0;
     width:fit-content;
@@ -329,6 +333,7 @@ label{
     color:  rgb(0, 0, 0);
     font-weight: bold;
 }
+/* adds grid to the footer so its align next to each other */
 footer{
     background-color: rgb(183, 121, 216);
     padding: 10px;
@@ -347,7 +352,7 @@ footer{
     padding-left: 70px;
     color:#280132;
     }
-
+/* uses inline to display nav in desktop screen */
 .nav {
     overflow: hidden;
     }
